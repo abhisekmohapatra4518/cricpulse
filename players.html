@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <title>Players - Cricket Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 dark:text-gray-100">
+  <header class="bg-gradient-to-r from-indigo-500 to-purple-600 p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-white">🏏 Cricket Hub</h1>
+    <nav class="space-x-4 text-white">
+      <a href="index.html">Home</a>
+      <a href="live.html">Live</a>
+      <a href="completed.html">Completed</a>
+      <a href="upcoming.html">Upcoming</a>
+      <a href="players.html">Players</a>
+      <a href="comparison.html">Compare</a>
+    </nav>
+    <button id="dark-toggle" class="ml-4 px-3 py-1 rounded-lg border border-gray-200 text-sm hover:bg-gray-200 dark:hover:bg-gray-700">🌙 Dark Mode</button>
+  </header>
+
+  <main class="p-6 space-y-4">
+    <div class="flex gap-2">
+      <input id="player-search" type="text" placeholder="Enter player name" class="p-2 border rounded w-full dark:bg-gray-800 dark:border-gray-700">
+      <button id="search-btn" class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700">Search</button>
+    </div>
+    <div id="players-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
